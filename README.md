@@ -2,6 +2,18 @@
 
 Dynamic array implementation that can be used with any type.
 
+They have members `items` and `size`.
+
+- `size` is how many items are in the array.
+- `items` is a pointer to the items in the array.
+
+```c
+typedef struct {
+    void **items;
+    long unsigned size;
+} Array;
+```
+
 ## Stubs
 
 ```c
