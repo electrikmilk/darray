@@ -8,13 +8,13 @@ Dynamic array implementation that can be used with any type.
 // Initialize array
 Array *new_array();
 
-// Append to array
+// Add item to array
 void append_array(Array *array, void *item);
 
 // Remove item from array
 void splice_array(Array *array, int index);
 
-// Free memory allocated for array
+// Free memory allocated for the array
 void free_array(Array *array);
 ```
 
