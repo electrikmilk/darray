@@ -1,5 +1,6 @@
 # darray
-Easy to use dynamic array implementation.
+
+Dynamic array implementation that can be used with any type.
 
 ## Stubs
 
@@ -40,4 +41,10 @@ int main() {
 
     return 0;
 }
+```
+
+When using an item from an array, you will need to specify the type and dereference it:
+
+```c
+*(int *) array->items[index];
 ```
