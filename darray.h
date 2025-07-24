@@ -33,7 +33,7 @@ void append_array(Array *array, void *item) {
 
     unsigned long new_position = array->size - 1;
     array->items[new_position] = malloc(item_size);
-    memcpy(array->items[new_position], item, item_size);
+    memmove(array->items[new_position], item, item_size);
 }
 
 void free_array(Array *array) {
