@@ -39,14 +39,14 @@ void free_array(Array *array);
 int main() {
     Array *a = new_array();
 
-    for (int j = 1; j <= 20; j++) {
-        append_array(a, &j);
+    for (int i = 1; i <= 20; i++) {
+        append_array(a, &i);
     }
 
     splice_array(a, 1);
 
-    for (int k = 0; k < a->size; k++) {
-        printf("%d: %d\n", k, *(int *) a->items[k]);
+    for (int j = 0; j < a->size; j++) {
+        printf("%d: %d\n", j, *(int *) a->items[j]);
     }
 
     free_array(a);
