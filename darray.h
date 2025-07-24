@@ -63,7 +63,7 @@ void splice_array(Array *array, int index) {
     }
 
     if ((array->items = malloc(sizeof(temp_array->items))) == NULL) {
-        printf("Failed to resize array when slicing.");
+        printf("Failed to resize array when splicing.");
         exit(1);
     }
     array->size = temp_array->size;
