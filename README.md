@@ -34,7 +34,7 @@ void free_array(Array *array);
 
 ```c
 #include <stdio.h>
-#include "darray.c"
+#include "darray.h"
 
 int main() {
     Array *a = new_array();
